@@ -1,0 +1,39 @@
+{
+  "name": "miribyou",
+  "version": "4.4.3",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "author": "Sultan Iskandar Maulana <https://github.com/nattadasu>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nattadasu/miribyou.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nattadasu/miribyou/issues"
+  },
+  "homepage": "https://github.com/nattadasu/miribyou#readme",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.12.4",
+    "@types/node": "^25.9.3",
+    "prettier": "^3.8.4",
+    "tsx": "^4.22.4",
+    "typescript": "^5.5.2",
+    "vitest": "~3.2.0",
+    "wrangler": "^4.100.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "hono": "^4.12.25",
+    "@hono/node-server": "^1.13.0"
+  }
+}
